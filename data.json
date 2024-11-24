@@ -1,0 +1,85 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "iPhone 14 Plus",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iPhone 14 Plus.png",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 14",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iPhone 14.png",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 15 Plus",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iPhone 15 Plus.png",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 15",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "/image/iPhone 15.png",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone SE",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iPhone SE.png",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 16",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iphone16.jpg",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 16 Plus",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iphone16plus.jpg",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 16 Pro",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iphone16pro.jpg",
+            "categopry": "iphone"
+
+        },
+        {
+            "id": 1,
+            "name": "iPhone 16 Pro Max",
+            "price": 100,
+            "description": "This is product 1",
+            "image": "image/iphone16promax.jpg",
+            "categopry": "iphone"
+
+        }
+    ]
+}

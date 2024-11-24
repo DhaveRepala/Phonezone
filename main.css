@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: MuseoModerno;
+}
+:root{
+    color-scheme: light dark;
+}
+body{
+    background: light-dark(white gray);
+    color: light-dark(black, white);
+}
+body::-webkit-scrollbar{
+   display: none;
+   width: 0;
+}
+header{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: light-dark(white, black);
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: light-dark(black, white);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    font-size: 25px;
+    overflow: hidden;
+}
+.logo{
+    position: absolute;
+    left: 2em;
+}
+.logo{
+    display: flex;
+}
+header img{
+    height: 2em;
+    margin-top: 9px;
+}
+.logo h2{
+    font-family: MuseoModerno;
+    font-weight: bolder;
+}
+.logo span{
+    color: #deaa1c;
+}
+.mainPage-navBar{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.mainPage-navBar ul{
+    display: flex;
+    gap: 2em;
+}
+.mainPage-navBar ul li a, li{
+    text-decoration: none;
+    list-style: none;
+    color: light-dark(black, white);
+}
+.mainPage-navBar ul li{
+    position: relative;
+}
+.mainPage-navBar ul li::after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #deaa1c;
+    bottom: 0;
+    left: 0;
+    transition: width 0.9s;
+}
+.mainPage-navBar ul li:hover::after{
+    width: 100%;
+}
+.mainPage-navBar ul li a:hover{
+    color: #deaa1c;
+}
+.nav-icons{
+    color: light-dark(black, white);
+}
+#pageLoaded{
+  height: 100dvh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+
+iframe::--webkit-scrollbar{
+    display: none;
+}
+/*Home CSS*/
+.hero{
+    height: 60vh;
+    background: url(image/heroBg.png) center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    text-shadow: yellow 20px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+.hero-text{
+    position: absolute;
+    bottom: 1em;
+    font-size: 25px;
+    text-shadow: 1px 1px  rgba(0,0,0,0.7); 
+    font-family: MuseoModerno;
+    left:5%;
+    color: white;
+}
+.hero-text h1{
+ color: light-dark(black, white);
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+   padding: 2em;
+}
+.items img{
+    height: 20em;
+ 
+}
+.items{
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 25em;
+    font-family: MuseoModerno;
+    position: relative;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.items:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s;
+}
+.items h4{
+   position: absolute;
+   bottom: 2em;
+   left: 2em;
+}
+.items button{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    height: 2em;
+    width: 2em;
+    border-radius: 60px;
+    border: none;
+    background: #deaa1c;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-right: 1px;
+    padding-top: 3.5px;
+    cursor: pointer;
+}
+
+.brandsHeading{ 
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+   
+}
+.apple-section{
+  display: block;
+  gap: 1em;
+}
+.productsNav-Bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+    background: light-dark(white, #3C3D37);
+}
+.productsNav-Bar ul{
+    display: flex;
+    gap: 10em;
+}
+.productsNav-Bar ul li a, li{
+    text-decoration: none;
+    list-style: none;
+    color: light-dark(black, white);
+    font-size: 20px;
+}
+
+/*About  CSS*/
+/*Contact CSS*/
+/*Login CSS*/
+/*Cart CSS*/
