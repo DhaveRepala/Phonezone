@@ -21,18 +21,7 @@
         <h1>CART</h1>
         <div id="cartProducts"></div>
     </div>
-<script>
-    const data = JSON.parse(localStorage.getItem("storage")) || [];
-    document.getElementById("cartProducts").innerHTML = data.map((element) => {
-        const { image, name, price } = element;
-        return `
-            <div class="cartItems">
-                <img src="${image}" alt="${name}" />
-                <h4>${name}</h4>
-                <p>Price: ${price}</p>
-            </div>
-        `;
-    }).join('');
+<script src="index.js">
 </script>
 </body>
 </html>

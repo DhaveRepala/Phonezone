@@ -4,12 +4,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: MuseoModerno;
+    overflow-x: hidden;
 }
 :root{
     color-scheme: light dark;
 }
 body{
     background: light-dark(white gray);
+
     color: light-dark(black, white);
 }
 body::-webkit-scrollbar{
@@ -61,13 +63,21 @@ header img{
     display: flex;
     gap: 2em;
 }
-.mainPage-navBar ul li a, li{
+.mainPage-navBar ul ion-icon:hover{
+    color: #deaa1c;
+    
+}
+.mainPage-navBar ul li{
     text-decoration: none;
     list-style: none;
     color: light-dark(black, white);
+    cursor: pointer;
 }
 .mainPage-navBar ul li{
     position: relative;
+}
+ion-icon{
+    cursor: pointer;
 }
 .mainPage-navBar ul li::after{
     content: " ";
@@ -82,7 +92,7 @@ header img{
 .mainPage-navBar ul li:hover::after{
     width: 100%;
 }
-.mainPage-navBar ul li a:hover{
+.mainPage-navBar ul li:hover{
     color: #deaa1c;
 }
 .nav-icons{
@@ -101,7 +111,7 @@ iframe::--webkit-scrollbar{
 }
 /*Home CSS*/
 .hero{
-    height: 60vh;
+    height: 85vh;
     background: url(image/heroBg.png) center;
     background-size: cover;
     text-align: center;
@@ -119,6 +129,7 @@ iframe::--webkit-scrollbar{
     font-family: MuseoModerno;
     left:5%;
     color: white;
+    
 }
 .hero-text h1{
  color: light-dark(black, white);
@@ -132,6 +143,7 @@ iframe::--webkit-scrollbar{
     gap: 2em;
     justify-content: center;
    padding: 2em;
+   background:transparent;
 }
 .items img{
     height: 20em;
@@ -141,43 +153,51 @@ iframe::--webkit-scrollbar{
     display: block;
     overflow: hidden;
     border-radius: 20px;
-    height: 25em;
+    height: 27em;
     font-family: MuseoModerno;
     position: relative;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.7);
-    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(117, 117, 117, 0.7);
+    background: light-dark(white, black);
+    border: 1px solid #deaa1c;
 }
 .items:hover{
     transform: scale(1.1);
     transition: transform 0.9s;
+    
+}
+.items:not(:hover){
+    filter: brightness(0.90);
 }
 .items h4{
    position: absolute;
-   bottom: 2em;
-   left: 2em;
+   bottom: 3.5em;
+   font-size: 16px;
+   left: 1em;
 }
 .items button{
     position: absolute;
-    bottom: 1em;
+    bottom: 10px;
     right: 1em;
-    height: 2em;
-    width: 2em;
+    color: light-dark(black,white);
+
     border-radius: 60px;
     border: none;
-    background: #deaa1c;
-    font-size: 20px;
+    font-size: 30px;
+    background: light-dark(black, white);
     font-weight: bolder;
-    padding-right: 1px;
-    padding-top: 3.5px;
+    background: none;
     cursor: pointer;
 }
-
+.items button:focus{
+     color: red;
+}
 .brandsHeading{ 
-    margin-top: 1em;
+    padding: 1em;
+    background: transparent;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: light-dark(white, white);
     
-   
 }
 .apple-section{
   display: block;
@@ -188,20 +208,62 @@ iframe::--webkit-scrollbar{
     align-items: center;
     justify-content: center;
     gap: 2em;
-    padding: 1em;
-    background: light-dark(white, #3C3D37);
+    padding: 5px;
+    padding-top: 10px;
+    background: transparent;
 }
 .productsNav-Bar ul{
     display: flex;
     gap: 10em;
 }
+.productsNav-Bar ul li a{
+    transition: 0.9s ease;
+}
+.productsNav-Bar ul li a:hover{
+    color: #deaa1c;
+}
 .productsNav-Bar ul li a, li{
     text-decoration: none;
     list-style: none;
-    color: light-dark(black, white);
+    color: light-dark(white, white);
     font-size: 20px;
 }
 
+.cartItems{
+    display: flex;
+}
+.cartItems img{
+    height: 10em;
+}
+#closeCartBtn{
+    cursor: pointer;
+}
+.deleted-icon{
+    background: orange;
+    position: absolute;
+    padding: 1px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width:3em;
+    right: 2em;
+    border: none;
+    font-size: 2em;
+}
+.cartItems{
+    position: relative;
+    overflow: hidden;
+    margin-top: 1em;
+}  
+.cartProducts{
+    gap:2em;
+    position: relative;
+    display: block;
+}
+#homePageBody{
+    background: url(image/homePagebg.svg) center no-repeat;
+    background-size: cover;
+}
 /*About  CSS*/
 /*Contact CSS*/
 /*Login CSS*/
