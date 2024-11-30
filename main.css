@@ -247,128 +247,275 @@ iframe::--webkit-scrollbar{
 .cartItems img{
     height: 10em;
 }
-#closeCartBtn{
-    cursor: pointer;
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+    color: white;
 }
-.deleted-icon{
-    background: orange;
+
+#closeCartBtn {
+    cursor: pointer;
+    font-size: 2rem;
     position: absolute;
-    padding: 1px;
-    height: 100%;
+    top: 1rem;
+    right: 1rem;
+    color: #ff6b6b;
+    transition: transform 0.2s;
+}
+
+#closeCartBtn:hover {
+    transform: scale(1.2);
+}
+
+#cartProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cartItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f3f4;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.cartItems:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cartItems img {
+    height: 8rem;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.cartItems h4 {
+    flex: 1;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #444;
+}
+
+.cartItems p {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.deleted-icon {
+    background: #b10909;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width:3em;
-    right: 2em;
-    border: none;
-    font-size: 2em;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
-.cartItems{
-    position: relative;
-    overflow: hidden;
-    margin-top: 1em;
-}  
-.cartProducts{
-    gap:2em;
-    position: relative;
-    display: block;
+
+.deleted-icon:hover {
+    background-color: #ff3d3d;
+}
+
+@media (max-width: 768px) {
+    #cartPage {
+        padding: 1rem;
+    }
+
+    .cartItems {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cartItems img {
+        margin-bottom: 1rem;
+    }
+
+    .cartItems h4, .cartItems p {
+        margin: 0.5rem 0;
+    }
+
+    .deleted-icon {
+        margin-top: 0.5rem;
+    }
 }
 #homePageBody{
-  background: light-dark(white, black);
-  overflow: hidden;
-  padding-left: 3em;
-  padding-right: 3em;
-}
-.products-hero-section{
-    width: 100%;
-    height: 50em;
-    
+    background: url(image/homePagebg.svg) center no-repeat;
+    background-size: cover;
 }
 /*About  CSS*/
-.background-section {
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-  .aboutheader {
-    background-color: black;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .aboutheader h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  .aboutheader nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  .team-section {
-    margin: 20px auto;
-    text-align: center;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .column {
-    flex: 0 0 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .card{
-    background-color: black;
-  }
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  .container {
-    padding: 15px;
-  }
-  .container h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .container p {
-    margin: 5px 0;
-  }
-  .button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .button:hover {
-    background-color: grey;
-  }
-  .textbox-section {
-    margin: 20px;
-    text-align: center;
-  }
-  .textbox-section textarea {
-    width: 80%;
-    height: 100px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
 /*Contact CSS*/
 /*Login CSS*/
 /*Cart CSS*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8));
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.modal-text {
+    font-size: 30px;
+}
+.modal-content {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border: 2px solid #000000;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    height: 700px;
+    width: 60%;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    animation: scaleIn 0.3s ease-in-out;
+}
+
+.modal-content img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content img:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.modal-content h4 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.modal-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+.modal-content span.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.modal-content span.close:hover {
+    color: #ff0000;
+    transform: rotate(90deg);
+}
+
+.modal-content button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.modal-content button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.zoom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.zoom-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease-in-out;
+}
+
+.zoom-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.zoom-modal .close:hover {
+    color: red;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
