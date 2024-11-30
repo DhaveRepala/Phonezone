@@ -32,7 +32,7 @@ header{
     left: 0;
     width: 100%;
     font-size: 25px;
-    overflow: hidden;
+   
 }
 .logo{
     position: absolute;
@@ -41,13 +41,18 @@ header{
 .logo{
     display: flex;
 }
+
 header img{
     height: 2em;
-    margin-top: 9px;
+    left: 10px;
+    font-size: 35px;
+    position: relative;
 }
 .logo h2{
     font-family: MuseoModerno;
     font-weight: bolder;
+   margin-top: 5px;
+    
 }
 .logo span{
     color: #deaa1c;
@@ -124,7 +129,7 @@ iframe::--webkit-scrollbar{
 .hero-text{
     position: absolute;
     bottom: 1em;
-    font-size: 25px;
+    font-size: 35px;
     text-shadow: 1px 1px  rgba(0,0,0,0.7); 
     font-family: MuseoModerno;
     left:5%;
@@ -134,13 +139,16 @@ iframe::--webkit-scrollbar{
 .hero-text h1{
  color: light-dark(black, white);
 }
+.hero-text span{
+    color: #deaa1c;
+}
 .products{
     display: flex;
     flex-wrap: wrap;
     height: auto;
     width: 100%;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
     justify-content: center;
    padding: 2em;
    background:transparent;
@@ -152,8 +160,8 @@ iframe::--webkit-scrollbar{
 .items{
     display: block;
     overflow: hidden;
-    border-radius: 20px;
     height: 27em;
+    width: 20em;
     font-family: MuseoModerno;
     position: relative;
     box-shadow: 0 1px 2px 0 rgba(117, 117, 117, 0.7);
@@ -191,6 +199,9 @@ iframe::--webkit-scrollbar{
 .items button:focus{
      color: red;
 }
+.items img{
+    object-fit: cover;
+}
 .brandsHeading{ 
     padding: 1em;
     background: transparent;
@@ -211,6 +222,7 @@ iframe::--webkit-scrollbar{
     padding: 5px;
     padding-top: 10px;
     background: transparent;
+    position: sticky;
 }
 .productsNav-Bar ul{
     display: flex;
@@ -261,8 +273,12 @@ iframe::--webkit-scrollbar{
     display: block;
 }
 #homePageBody{
-    background: url(image/homePagebg.svg) center no-repeat;
-    background-size: cover;
+  background: black;
+  overflow: hidden;
+}
+.products-hero-section{
+    width: 100%;
+    
 }
 /*About  CSS*/
 /*Contact CSS*/
