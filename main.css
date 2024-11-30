@@ -281,6 +281,91 @@ iframe::--webkit-scrollbar{
     
 }
 /*About  CSS*/
+.background-section {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+  .aboutheader {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aboutheader h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .aboutheader nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .team-section {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .column {
+    flex: 0 0 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .card{
+    background-color: black;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    padding: 15px;
+  }
+  .container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .container p {
+    margin: 5px 0;
+  }
+  .button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: grey;
+  }
+  .textbox-section {
+    margin: 20px;
+    text-align: center;
+  }
+  .textbox-section textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 /*Contact CSS*/
 /*Login CSS*/
 /*Cart CSS*/
