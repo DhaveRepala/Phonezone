@@ -41,7 +41,7 @@ const displayPhones = async () => {
             const { image, name, price } = element;
             return `
             <div class="items" ">
-              <img src="${image}" aonclick="showModal(${index}, 'android')" " />
+              <img src="${image}" onclick="showModal(${index}, 'android')" " />
               <h4>${name}</h4>
                    <button onclick="showCart(${index}, 'android')"><ion-icon name="add-circle-outline" class="addToCartBtn"></ion-icon></button>
               </button>
