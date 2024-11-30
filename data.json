@@ -154,6 +154,39 @@
         }, 
         {
             "id": 1,
+            "name": "iPhone 15 Silicone Case with MagSafe Sunshine",
+            "price": 3390.00,
+            "description": "This is product 1",
+            "image": "image/iPhone 15 Silicone Case with MagSafe Sunshine.png",
+            "category": "phonecase"
+
+        }, {
+            "id": 1,
+            "name": "iPhone 16 Case with MagSafe Sunset Purple",
+            "price": 3390.00,
+            "description": "This is product 1",
+            "image": "image/iPhone 16 Case with MagSafe Sunset Purple.png",
+            "category": "phonecase"
+
+        }, {
+            "id": 1,
+            "name": "iPhone 16 Pro Max Case with MagSafe Summit Stone",
+            "price": 3390.00,
+            "description": "This is product 1",
+            "image": "image/iPhone 16 Pro Max Case with MagSafe Summit Stone.png",
+            "category": "phonecase"
+
+        }, {
+            "id": 1,
+            "name": "iPhone 16 ProCase with MagSafe Riptide Blue",
+            "price": 3390.00,
+            "description": "This is product 1",
+            "image": "image/iPhone 16 ProCase with MagSafe Riptide Blue.png",
+            "category": "phonecase"
+
+        }, 
+        {
+            "id": 1,
             "name": "JBL Free II True wireless in-ear headphones",
             "price": 3390.00,
             "description": "This is product 1",
