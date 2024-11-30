@@ -241,10 +241,97 @@
             "image": "image/JBL Quantum TWS True wireless Noise Cancelling gaming earbuds.jpg",
             "category": "earbuds"
 
+        },
+        {
+            "id": 1,
+            "name": "Samsung Galaxy S23",
+            "price": 900,
+            "description": "This is a high-end Android smartphone with exceptional performance.",
+            "image": "image/galaxy-s23-plus-942087_600x600_crop_center.jpg",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Google Pixel 8",
+            "price": 800,
+            "description": "The latest Pixel device with Google AI features and clean Android experience.",
+            "image": "image/Pixel-6-1_1024x1024.webp",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+           
+        },
+        {
+            "id": 1,
+            "name": "OnePlus 11",
+            "price": 700,
+            "description": "Flagship device with premium build and fast charging.",
+            "image": "image/oneplus11.webp",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Xiaomi 13 Pro",
+            "price": 650,
+            "description": "A budget-friendly smartphone with flagship-grade features.",
+            "image": "image/xioami13pro.jpeg",
+           "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Sony Xperia 5 V",
+            "price": 950,
+            "description": "A compact Android device with excellent camera capabilities.",
+            "image": "image/Sony Xperia 5 V.jpg",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Samsung Galaxy A54",
+            "price": 450,
+            "description": "Mid-range device with long battery life and great display.",
+            "image": "image/samsung galaxy a54.jpeg",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Google Pixel 7a",
+            "price": 500,
+            "description": "Affordable Pixel device with impressive camera quality.",
+            "image": "image/google pixel 7a.jpg",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Asus ROG Phone 7",
+            "price": 1200,
+            "description": "High-performance gaming phone with advanced cooling system.",
+            "image": "image/Asus ROG Phone 7.png",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
+        },
+        {
+            "id": 1,
+            "name": "Realme GT Neo 5",
+            "price": 550,
+            "description": "Stylish phone with cutting-edge features for its price.",
+            "image": "image/Realme GT Neo 5.jpeg",
+            "category": "android",
+            "storage": "128GB, 256GB",
+            "colors": ["Black", "Cream", "Green"]
         }
-       
-       
-    
-
     ]
 }

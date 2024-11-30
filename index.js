@@ -33,7 +33,19 @@ const displayPhones = async () => {
               `   
 }).join('');
 
-        //ANDROID DISPLAY
+const android = products.filter((element) => element.category == "android");
+console.log(iphone);
+ document.querySelector(".android").innerHTML = android.map((element, index) => {
+    const {image, name, price} = element;
+    return`
+    <div class="items">
+      <img src="${image}" alt="${name}" />
+      <h4>${name}</h4>
+    <button onclick="showCart(${index}, 'android')"><ion-icon name="add-circle-outline" class="addToCartBtn"></ion-icon></button>
+    </div>
+    `
+}).join('');
+
         //EARBUDS DISPLAY
         const earbuds = products.filter((element) => element.category == "earbuds");
         document.querySelector(".Earbuds").innerHTML = earbuds.map((element, index) => { 
