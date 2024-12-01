@@ -157,3 +157,22 @@ function removeCart(index){
     cartRender(); 
 }
 cartRender();
+
+
+//btn para sa drop down menu
+
+
+
+function showDropDown(){
+    const profileMenu = document.getElementById("profile-menu");
+    if(profileMenu.style.height == "8em"){
+        profileMenu.style.height =  0;
+        profileMenu.style.border = "none";
+       
+    }else{
+        profileMenu.style.height = "8em";
+        profileMenu.style.border = "1px solid";
+   
+    }
+}
+// earphonesHeroSection phonecaseherosection
