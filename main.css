@@ -285,7 +285,7 @@ iframe::--webkit-scrollbar{
     height: 100vh;
     width: 100%;
     text-align: center;
-    background: black;
+    background: light-dark(white,black);
 }
 .loginContainer{
     display: flex;
@@ -293,7 +293,7 @@ iframe::--webkit-scrollbar{
     padding: 2em;
     width: 25%;
     height: 40em;
-  background: black;
+  background: light-dark(white,black);
   border: 1px solid;
    gap: 2px;
  align-items: center;
@@ -343,7 +343,7 @@ hr{
     bottom:6.1em;
     z-index: 2;
     left: 13.5em;
-    background: black;
+    background: light-dark(white,black);
     padding: 13px;
 }
 /*cart*/
