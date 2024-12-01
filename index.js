@@ -1,3 +1,4 @@
+
 var mainData = [];
 
 // Display phones function
@@ -118,7 +119,7 @@ const aboutPage = document.getElementById("aboutuspage");
 const contactPage = document.getElementById("contactPage");
 const pageLoaded = document.getElementById("pageLoaded");
 const cartBt = document.getElementById("cartBtn");
-
+const profileBtn = document.getElementById("profile");
 window.addEventListener('click', (e) => {
     if(e.target == homePage){
         pageLoaded.src = "homePage.html";
@@ -128,9 +129,12 @@ window.addEventListener('click', (e) => {
         pageLoaded.src = "contactPage.html";
     }else if(e.target == cartBt){
         pageLoaded.src = "cart.html";
+    }else if(e.target == profileBtn){
+        pageLoaded.src = "profilePage.html";
     }
 });
 //cart part
+
 const data = JSON.parse(localStorage.getItem("storage")) || [];
 
 function cartRender(){
@@ -156,22 +160,56 @@ function removeCart(index){
     localStorage.setItem("storage", JSON.stringify(data)); 
     cartRender(); 
 }
+let totalPrice = 0;
+data.map((element)=>{
+    totalPrice += element.price;
+})
+
+const cartTotalPriceDisplay = document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + totalPrice;
+
+const checkOutBtn = document.getElementById("checkOutBtn");
+
+checkOutBtn.addEventListener('click', ()=>{
+    showReceipt();
+    document.getElementById("cartRecipt").style.display = "block";
+});
+const cartRecipt = document.getElementById("cartRecipt");
+window.addEventListener('click', (event)=>{
+    if(event.target == cartRecipt){
+        cartRecipt.style.display = "none";
+    }
+})
 cartRender();
-
-
+function showReceipt(){
+  document.getElementById("cartRecipt-content").innerHTML += data.map((element) =>{
+     const {name, price} = element;
+     return `
+   <div class="receipt-content">
+      <h3>${name}</h3>
+      <h4> ₱${price}</h4>
+      <br/>
+     </div>
+     `
+  }).join(" ");
+}
 //btn para sa drop down menu
 
+//login func
 
+
+function submit(){
+    window.location.href = "mainPage.html";
+}
 
 function showDropDown(){
     const profileMenu = document.getElementById("profile-menu");
     if(profileMenu.style.height == "8em"){
         profileMenu.style.height =  0;
-        profileMenu.style.border = "none";
+        
        
     }else{
         profileMenu.style.height = "8em";
-        profileMenu.style.border = "1px solid";
+        
    
     }
 }

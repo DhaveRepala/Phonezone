@@ -34,6 +34,7 @@ header{
     width: 100%;
     font-size: 25px;
     overflow: hidden;
+   
 }
 .logo{
     position: absolute;
@@ -249,7 +250,7 @@ iframe::--webkit-scrollbar{
     display: block;
     position: fixed;
     top: 3.9em;
-    right: 1em;
+    right: 2em;
     z-index: 3;
     background: light-dark(white, black);
     height: 0;
@@ -270,7 +271,153 @@ iframe::--webkit-scrollbar{
     text-decoration: none;
     color: light-dark(black, white);
 }
+#profilePic{
+    font-size: 15em;
+}
+.profile-container{
+    padding: 1em;
+}
+/*Login css*/
+.loginPageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: black;
+}
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: 25%;
+    height: 40em;
+  background: black;
+  border: 1px solid;
+   gap: 2px;
+ align-items: center;
+position: relative;
+
+
+}
+.loginContainer input{
+    
+    width: 300px;
+    height: 30px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+.loginContainer img{
+    height: 200px;
+    object-fit: cover;
+}
+#submit{
+    background: yellow;
+    width: 300px;
+    cursor: pointer;
+    border: none;
+
+}
+hr{
+    width: 100%;
+}
+.social-Logos{
+    font-size: 2em;
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    gap: 2em;
+}
+.loginContainer a{
+    font-size: 10px;
+    position: relative;
+    left: 10.8em;
+    bottom: 2.5em;
+    color: blue;
+}
+.loginContainer p{
+    position: absolute;
+    bottom:6.1em;
+    z-index: 2;
+    left: 13.5em;
+    background: black;
+    padding: 13px;
+}
 /*cart*/
+
+#cartTotalPriceDisplay{
+    text-align: right;
+    position: relative;
+    right: 1em;
+    
+}
+#bottomPrice{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 1em;
+    
+}
+#cartRecipt{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-in-out;
+}
+ 
+#cartRecipt-content{
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border: 2px solid #000000;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 90%;
+    width: 70%;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    animation: scaleIn 0.3s ease-in-out;
+    overflow: hidden;
+    margin-left: 17%;
+    
+}
+#cartRecipt-content img{
+    height: 10em;
+}
+#cartRecipt h2{
+    font-family: MuseoModerno;
+    font-weight: bolder;
+   margin-top: -2em;
+   
+}
+#cartRecipt span{
+    color: #deaa1c;
+}
+
+.receipt-content{
+ display: flex;
+}
+.receipt-content h4{
+    position: absolute;
+    right: 2em;
+    text-align: right;
+}
+
+
+
 #cartPage h1{
    color: light-dark(black, white);
 }
@@ -396,7 +543,10 @@ h1 {
 .products-hero-section{
     width: 100%;
     height: 50em;
-    
+  
+}
+.objfit{
+    object-fit: cover;
 }
 footer{
     height: 35em;
