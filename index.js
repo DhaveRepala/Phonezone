@@ -154,18 +154,30 @@ document.getElementById("cartProducts").innerHTML = data.map((element, index) =>
     `;
 }).join('');
 }
+let totalPrice = 0;
 
 function removeCart(index){
     data.splice(index, 1); 
     localStorage.setItem("storage", JSON.stringify(data)); 
     cartRender(); 
+   updateTotalPrice(data);
+    
+    
 }
-let totalPrice = 0;
+function updateTotalPrice(data){
+    data.map((element)=>{
+        totalPrice += element.price;
+    });    
+    document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + totalPrice;
+    document.getElementById("cartTotalPriceDisplayRes").innerHTML = "Total Price: " + totalPrice;
+    totalPrice = 0;
+}
 data.map((element)=>{
     totalPrice += element.price;
-})
+});    
+document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + totalPrice;
+totalPrice = 0;
 
-const cartTotalPriceDisplay = document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + totalPrice;
 
 const checkOutBtn = document.getElementById("checkOutBtn");
 
@@ -188,10 +200,16 @@ function showReceipt(){
       <h3>${name}</h3>
       <h4> ₱${price}</h4>
       <br/>
+    
      </div>
      `
   }).join(" ");
+  data.splice(0, data.length);
+  document.getElementById("cartProducts").innerHTML = "";
+  document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + 0;
+
 }
+
 //btn para sa drop down menu
 
 //login func
