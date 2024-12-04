@@ -6,7 +6,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone14plus.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -15,7 +16,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone14.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         }, {
             "id": 1,
@@ -23,7 +25,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone14.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -32,7 +35,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone15plus.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -41,7 +45,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iPhone 15.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -50,7 +55,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone15promax.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -59,7 +65,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone16.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -68,7 +75,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone16pro.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -77,7 +85,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone16pro.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -86,7 +95,8 @@
             "price": 100,
             "description": "This is product 1",
             "image": "image/iphone16promax.jpg",
-            "category": "iphone"
+            "category": "iphone",
+            "quantity": 1
 
         },
         {
@@ -95,7 +105,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 12 | 12 Pro Silicone Case with MagSafe - Deep Navy ₱3,390.00.jpg",
-            "categopry": "phonecase"
+            "categopry": "phonecase",
+            "quantity": 1
 
         },
         {
@@ -104,7 +115,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 13 Clear Case with MagSafe ₱3,390.00.jpg",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         },
         {
@@ -113,7 +125,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 14 Pro Silicone Case with MagSafe - Storm Blue ₱3,390.00.jpg",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         },
         {
@@ -122,7 +135,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 14 Silicone Case with MagSafe - Storm Blue ₱3,390.00.jpg",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         },
         {
@@ -131,7 +145,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 15 Clear Case with MagSafe ₱3,390.00.jpg",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         },
         {
@@ -140,7 +155,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 15 Pro Silicone Case with MagSafe - Soft Mint ₱3,390.00.jpg",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         },
         {
@@ -149,7 +165,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone SE Silicone Case - (PRODUCT)RED.jpg",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         }, 
         {
@@ -158,7 +175,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 15 Silicone Case with MagSafe Sunshine.png",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         }, {
             "id": 1,
@@ -166,7 +184,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 16 Case with MagSafe Sunset Purple.png",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         }, {
             "id": 1,
@@ -174,7 +193,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 16 Pro Max Case with MagSafe Summit Stone.png",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         }, {
             "id": 1,
@@ -182,7 +202,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/iPhone 16 ProCase with MagSafe Riptide Blue.png",
-            "category": "phonecase"
+            "category": "phonecase",
+            "quantity": 1
 
         }, 
         {
@@ -191,7 +212,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Free II True wireless in-ear headphones.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -200,7 +222,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Live Free NC+ True Wireless In-Ear NC Earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -209,7 +232,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Live Pro 2 True wireless Noise Cancelling earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -218,7 +242,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Wave Buds True wireless earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -227,7 +252,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Tune Beam True Wireless Noise Cancelling earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -236,7 +262,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Reflect Aero TWS True wireless Noise Cancelling active earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -245,7 +272,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Wave Beam True wireless earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -254,7 +282,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Tune 230NC TWS True wireless noise cancelling.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -263,7 +292,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Tune 115TWS True wireless earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         }, 
         {
@@ -272,7 +302,8 @@
             "price": 3390.00,
             "description": "This is product 1",
             "image": "image/JBL Quantum TWS True wireless Noise Cancelling gaming earbuds.jpg",
-            "category": "earbuds"
+            "category": "earbuds",
+            "quantity": 1
 
         },
         {
@@ -283,7 +314,8 @@
             "image": "image/galaxy-s23-plus-942087_600x600_crop_center.jpg",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -293,7 +325,8 @@
             "image": "image/Pixel-6-1_1024x1024.webp",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
            
         },
         {
@@ -304,7 +337,8 @@
             "image": "image/oneplus11.webp",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -314,7 +348,8 @@
             "image": "image/xioami13pro.jpeg",
            "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -324,7 +359,8 @@
             "image": "image/Sony Xperia 5 V.jpg",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -334,7 +370,8 @@
             "image": "image/samsung galaxy a54.jpeg",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -344,7 +381,8 @@
             "image": "image/google pixel 7a.jpg",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -354,7 +392,8 @@
             "image": "image/Asus ROG Phone 7.png",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         },
         {
             "id": 1,
@@ -364,7 +403,8 @@
             "image": "image/Realme GT Neo 5.jpeg",
             "category": "android",
             "storage": "128GB, 256GB",
-            "colors": ["Black", "Cream", "Green"]
+            "colors": ["Black", "Cream", "Green"],
+            "quantity": 1
         }
     ]
 }

@@ -118,8 +118,8 @@ iframe::--webkit-scrollbar{
 }
 /*Home CSS*/
 .hero{
-    height: 70vh;
-    background: url(image/heroBg.png) center;
+    height: 80vh;
+    background: url(image/iphoneHeroSection.png) center;
     background-size: cover;
     text-align: center;
     width: 100%;
@@ -352,8 +352,14 @@ hr{
     text-align: right;
     position: relative;
     right: 1em;
-    
-}
+    color: white;
+ }
+ #checkOutBtn{
+    height: 30px;
+    width: 10em;
+    position: relative;
+   left: 89%;
+ }
 #bottomPrice{
     position: fixed;
     bottom: 0;
@@ -361,6 +367,9 @@ hr{
     width: 100%;
     padding: 1em;
     
+}
+.quantity{
+    display: flex;
 }
 #cartRecipt{
     display: none;
@@ -421,7 +430,9 @@ hr{
 }
 
 
-
+.quantityBtn{
+    border: none;
+}
 #cartPage h1{
    color: light-dark(black, white);
 }
@@ -458,6 +469,7 @@ h1 {
     flex-direction: column;
     gap: 1.5rem;
     color: light-dark(black, white);
+    margin-bottom: 7.5em;
 }
 
 .cartItems {

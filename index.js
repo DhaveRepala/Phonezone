@@ -136,6 +136,8 @@ window.addEventListener('click', (e) => {
 //cart part
 
 const data = JSON.parse(localStorage.getItem("storage")) || [];
+var totalPrice = 0;
+
 
 function cartRender(){
     if(data.length == 0){
@@ -143,18 +145,39 @@ function cartRender(){
         return;
     }
 document.getElementById("cartProducts").innerHTML = data.map((element, index) => {
-    const { image, name, price } = element;
+    const { image, name, price,quantity } = element;
     return `
         <div class="cartItems">
             <img src="${image}" alt="${name}" />
             <h4>${name}</h4>
+             <div class="quantity">
+        <button onclick="addQuantity(${index})" class="quantityBtn"><ion-icon name="add-outline"></ion-icon></button>
+       <p>${quantity}</p>
+       <button onclick="minusQuantity(${index})" class="quantityBtn"><ion-icon name="remove-outline"></ion-icon></button>
+       </div>
+        
+    
             <p>Price: ${price}</p>
-            <button  class="deleted-icon" onclick = "removeCart(${index})"><ion-icon name="trash-outline" class="btnIcon"></ion-icon></button>
+            <button  class="deleted-icon" onclick = "removeCart(${index})" ><ion-icon name="trash-outline" class="btnIcon"></ion-icon></button>
         </div>
     `;
 }).join('');
 }
-let totalPrice = 0;
+
+function addQuantity(index){
+    data[index].quantity += 1;
+    cartRender();
+        
+    }
+    function minusQuantity(index){
+        data[index].quantity -= 1;
+        if(data[index].quantity <= 1){
+            data[index].quantity = 1;
+         }
+       cartRender();
+    }
+
+
 
 function removeCart(index){
     data.splice(index, 1); 
@@ -166,17 +189,18 @@ function removeCart(index){
 }
 function updateTotalPrice(data){
     data.map((element)=>{
-        totalPrice += element.price;
+        totalPrice += element.price * element.quantity;
     });    
     document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + totalPrice;
     document.getElementById("cartTotalPriceDisplayRes").innerHTML = "Total Price: " + totalPrice;
     totalPrice = 0;
+    cartRender();
 }
 data.map((element)=>{
-    totalPrice += element.price;
+    totalPrice += element.price * element.quantity;
 });    
 document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + totalPrice;
-totalPrice = 0;
+
 
 
 const checkOutBtn = document.getElementById("checkOutBtn");
@@ -205,8 +229,9 @@ function showReceipt(){
      `
   }).join(" ");
   data.splice(0, data.length);
-  document.getElementById("cartProducts").innerHTML = "";
-  document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: ₱" + 0;
+  document.getElementById("cartProducts").innerHTML = "<h1>Cart is Empty</h1>";
+  document.getElementById("cartTotalPriceDisplayRes").innerHTML = "Total Price: ₱" + totalPrice;
+  document.getElementById("cartTotalPriceDisplay").innerHTML = "Total Price: " + 0;
 
 }
 
